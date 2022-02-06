@@ -2,10 +2,17 @@
   --primary-color-accent: #2196f3;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
+  --color-text: #ffffff;
+  --primary-color-bg: #ffffff;
+  --secondary-color-bg: #f5f4fa;
+  --color-bg: #2f303a;
 }
 body {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   font-family: "Roboto", sans-serif;
-  background: #ffffff;
+  background: var(--primary-color-bg);
 }
 /* components */
 .list {
@@ -19,7 +26,6 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 /* header */
@@ -29,15 +35,14 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--primary-color-accent);
 }
 .logo-black {
   color: var(--secondary-text-color);
 }
-.nav-link {
+.nav-link,
+.contact-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -48,10 +53,6 @@ body {
   color: var(--primary-color-accent);
 }
 .contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 .contact-link:hover,
@@ -60,7 +61,7 @@ body {
 }
 /* hero */
 .hero {
-  background: #2f303a;
+  background: var(--color-bg);
 }
 .hero-text {
   font-weight: 900;
@@ -69,14 +70,14 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-text);
 }
 .btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  color: #ffffff;
+  color: var(--color-text);
   background: var(--primary-color-accent);
 }
 .btn:hover,
@@ -89,49 +90,39 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
 .features-list-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 /* make-section */
 /* team */
 .team-section {
-  background: #f5f4fa;
+  background: var(--secondary-color-bg);
 }
 .team-item-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 .team-item-prof {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 /* footer */
 .footer-section {
-  background: #2f303a;
+  background: var(--color-bg);
 }
 .address-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-text);
 }
 .address-link:hover,
 .address-link:focus {
@@ -139,10 +130,7 @@ body {
 }
 .address-contact-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .address-contact-link:hover,
@@ -150,7 +138,7 @@ body {
   color: var(--primary-color-accent);
 }
 .logo-white {
-  color: #ffffff;
+  color: var(--color-text);
 }
 /* portfolio.html */
 /* button */
@@ -158,15 +146,13 @@ body {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  background: #f5f4fa;
+  background: var(--secondary-color-bg);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background: var(--primary-color-accent);
-  color: #ffffff;
+  color: var(--color-text);
   cursor: pointer;
 }
 /* card */
@@ -178,9 +164,7 @@ body {
   color: var(--secondary-text-color);
 }
 .portfolio-card-type {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
