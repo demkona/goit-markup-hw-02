@@ -6,6 +6,7 @@
   --primary-color-bg: #ffffff;
   --secondary-color-bg: #f5f4fa;
   --color-bg: #2f303a;
+  --secondary-color-btn: #188ce8;
 }
 body {
   font-weight: 400;
@@ -83,7 +84,7 @@ body {
 .btn:hover,
 .btn:focus,
 .btn:visited {
-  background: #188ce8;
+  background: var(--secondary-color-btn);
 }
 /* features */
 .features-item-title {
